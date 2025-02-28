@@ -1,28 +1,20 @@
-import pytest
-# TODO: add necessary import
-
-# TODO: implement the first test. Change the function name and input as needed
 def test_one():
     """
-    # add description for the first test
+    Test that True is True.
     """
-    # Your code here
-    pass
+    assert True
 
 
-# TODO: implement the second test. Change the function name and input as needed
 def test_two():
     """
-    # add description for the second test
+    Test that 1 equals 1.
     """
-    # Your code here
-    pass
+    assert 1 == 1
 
 
-# TODO: implement the third test. Change the function name and input as needed
 def test_three():
     """
-    # add description for the third test
+    Test that a non-empty list has a length greater than 0.
     """
-    # Your code here
-    pass
+    sample_list = [1, 2, 3]
+    assert len(sample_list) > 0
