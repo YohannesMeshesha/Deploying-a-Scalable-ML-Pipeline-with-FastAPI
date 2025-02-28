@@ -6,7 +6,7 @@ print("GET request:")
 print("Status Code:", response_get.status_code)
 print("Welcome Message:", response_get.text)
 
-# Define a sample JSON payload matching the expected data schema
+# Define sample input data for the POST endpoint
 data = {
     "age": 37,
     "workclass": "Private",
@@ -24,7 +24,7 @@ data = {
     "native-country": "United-States"
 }
 
-# Test the POST endpoint (ensure you use the trailing slash)
+# Test the POST endpoint (note the trailing slash)
 response_post = requests.post("http://127.0.0.1:8000/data/", json=data)
 print("\nPOST request:")
 print("Status Code:", response_post.status_code)
